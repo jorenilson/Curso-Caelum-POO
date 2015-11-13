@@ -2,9 +2,7 @@ package br.banco.com;
 
 public class Conta {
 
-	private int numero = 1234;
-	private String dono = "Duke";
-	private String cpf = "123.456.789-10";
+	private int numero;
 	private double saldo;
 	private double limite;
 	private Cliente titular; // quando chamarem um new,
@@ -21,22 +19,6 @@ public class Conta {
 
 	public void setNumero(int numero) {
 		this.numero = numero;
-	}
-
-	public String getDono() {
-		return dono;
-	}
-
-	public void setDono(String dono) {
-		this.dono = dono;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
 	}
 
 	public double getSaldo() {
