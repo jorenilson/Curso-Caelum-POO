@@ -1,5 +1,6 @@
 package br.banco.testes.com;
 
+import br.banco.com.Cliente;
 import br.banco.com.Conta;
 
 public class TestaContaEstouro1 {
@@ -9,7 +10,8 @@ public class TestaContaEstouro1 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Conta minhaConta = new Conta();
+		Cliente titular = new Cliente();
+		Conta minhaConta = new Conta(titular);
 		// minhaConta.saldo = 1000.0;
 		//minhaConta.limite = 1000.0;
 		minhaConta.setSaldo(1000.0);

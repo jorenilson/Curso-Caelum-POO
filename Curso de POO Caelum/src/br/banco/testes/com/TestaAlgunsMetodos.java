@@ -1,5 +1,6 @@
 package br.banco.testes.com;
 
+import br.banco.com.Cliente;
 import br.banco.com.Conta;
 
 // Código a seguir saca dinheiro e depois deposita outra quantia na nossa Conta
@@ -8,7 +9,10 @@ public class TestaAlgunsMetodos {
 	public static void main(String[] args) {
 		// criando conta
 		Conta minhaConta;
-		minhaConta = new Conta();
+		Cliente titular;
+		titular = new Cliente();
+		
+		minhaConta = new Conta(titular);
 		
 		// Alterando os valores da minhaConta
 		minhaConta.setDono("Duke");

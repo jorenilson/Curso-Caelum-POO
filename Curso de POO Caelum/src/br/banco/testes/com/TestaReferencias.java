@@ -1,5 +1,6 @@
 package br.banco.testes.com;
 
+import br.banco.com.Cliente;
 import br.banco.com.Conta;
 
 public class TestaReferencias {
@@ -9,7 +10,8 @@ public class TestaReferencias {
 	 */
 	public static void main(String[] args) {
 
-		Conta c1 = new Conta();
+		Cliente titular = new Cliente();
+		Conta c1 = new Conta(titular);
 		c1.deposita(100);
 		
 		Conta c2 = c1; // linha importante

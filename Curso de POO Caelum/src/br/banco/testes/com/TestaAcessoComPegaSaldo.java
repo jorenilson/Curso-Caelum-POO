@@ -1,5 +1,6 @@
 package br.banco.testes.com;
 
+import br.banco.com.Cliente;
 import br.banco.com.Conta;
 
 public class TestaAcessoComPegaSaldo {
@@ -9,7 +10,8 @@ public class TestaAcessoComPegaSaldo {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Conta minhaConta = new Conta();
+		Cliente titular = new Cliente();
+		Conta minhaConta = new Conta(titular);
 		
 		minhaConta.deposita(1000);
 		System.out.println("Saldo: "+minhaConta.pegaSaldo());

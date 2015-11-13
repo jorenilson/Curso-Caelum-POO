@@ -10,7 +10,8 @@ public class Teste {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Conta minhaConta = new Conta();
+		Cliente titular = new Cliente();
+		Conta minhaConta = new Conta(titular);
 		Cliente c = new Cliente();
 		minhaConta.setTitular(c);
 

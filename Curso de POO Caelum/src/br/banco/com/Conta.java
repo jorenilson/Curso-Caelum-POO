@@ -10,6 +10,10 @@ public class Conta {
 	private Cliente titular; // quando chamarem um new,
 												// haverá um new Cliente para
 												// ele.
+	
+	public Conta(Cliente titular){
+		this.titular = titular;
+	}
 
 	public int getNumero() {
 		return numero;
