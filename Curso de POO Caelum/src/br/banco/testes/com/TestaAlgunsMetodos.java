@@ -15,7 +15,7 @@ public class TestaAlgunsMetodos {
 		minhaConta = new Conta(titular);
 		
 		// Alterando os valores da minhaConta
-		minhaConta.setDono("Duke");
+		//minhaConta.setDono("Duke");
 		minhaConta.setSaldo(1000);
 		
 		// Saca 200 reais

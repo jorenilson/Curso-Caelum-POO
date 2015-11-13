@@ -12,7 +12,7 @@ public class Programa {
 		
 		minhaConta = new Conta(titular);
 
-		minhaConta.setDono("Duke");
+		//minhaConta.setDono("Duke");
 		minhaConta.setSaldo(1000.0);
 
 		System.out.println("Saldo atual: " + minhaConta.getSaldo());

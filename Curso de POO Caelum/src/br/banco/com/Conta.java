@@ -8,9 +8,16 @@ public class Conta {
 	private Cliente titular; // quando chamarem um new,
 												// haverá um new Cliente para
 												// ele.
-	
+	// construtor
 	public Conta(Cliente titular){
+		//	faz mais uma série de inicializações e configurações
 		this.titular = titular;
+	}
+	
+	public Conta(int numero, Cliente titular){
+		this(titular); // chama o construtor que foi declarado acima
+		this.numero = numero;
+		
 	}
 
 	public int getNumero() {
